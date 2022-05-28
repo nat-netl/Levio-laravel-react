@@ -1,0 +1,53 @@
+.menu {
+  display: block;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  height: 0;
+}
+.is-open {
+  height: 100vh;
+  .menu__overflow {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    overflow-x: hidden;
+  overflow-y: auto;
+  }
+}
+.menu__overflow {
+  background-color: #000;
+  transition: -webkit-transform .4s ease-in-out;
+  transition: transform .4s ease-in-out;
+  transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+  -webkit-transform: translateY(-105%);
+  transform: translateY(-105%);
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  .menu__in {
+    padding-top: 140px;
+    padding-bottom: 60px;
+  }
+}
+
+.nav ul li a {
+  text-transform: uppercase;
+  font-size: 21px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 6px;
+}
+@media screen and (min-width: 87.5em) {
+  .menu__body .nav ul li a {
+    font-size: 64px;
+  }
+}
+@media print, screen and (min-width: 36em){
+  .nav ul li a {
+    font-size: 45px;
+  }
+}
