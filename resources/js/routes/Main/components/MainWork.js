@@ -34,7 +34,6 @@ const MainWork = () => {
     slideToScroll: 1,
     draggable: true,
     dots: true,
-    adaptiveHeight: true,
     cssEase: 'linear',
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />
@@ -45,9 +44,9 @@ const MainWork = () => {
       <div className='container'>
         <Slider className={s.work__slider} {...settings}>
         {
-          GlobalSliderItems.map ((slide) => {
+          GlobalSliderItems.map ((slide, index) => {
             return(
-              <div className={s['item__work-slider']}>
+              <div className={s['item__work-slider']} key={index}>
                   <h2 className={s['title__work-slider']}><span className={s['step__work-title']}>Шаг {slide.id+1}.</span> {slide.sliderTitle}</h2>
                   <div className={s['text__work-slider']}>{slide.itemText}</div>
               </div>

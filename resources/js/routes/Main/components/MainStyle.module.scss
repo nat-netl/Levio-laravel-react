@@ -271,6 +271,7 @@
   }
 }
 .form__contact-box {
+  padding-right: 50px;
   display: flex;
   text-transform: uppercase;
   font-weight: 700;
@@ -292,6 +293,28 @@
     color: rgb(36, 0, 0);
   }
 }
+
+/***********
+  about us
+***********/
+
+.link__about {
+  background: linear-gradient(90deg, rgb(36, 0, 0) 0%, rgb(210, 6, 223) 0%, rgb(85, 0, 255) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: rgb(36, 0, 0);
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+
+  &:hover {
+    background: #c4c4c4;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgb(36, 0, 0);
+  }
+}
+
 /***********
   contacts
 ***********/
@@ -327,7 +350,11 @@
     }
   }
 }
-
+@media (max-width: 500px) {
+  .bottom__contact-item {
+    flex-wrap: wrap;
+  }
+}
 
 
 @media (min-width: 860px) {
@@ -352,7 +379,8 @@
   .items__contact-text {
     display: flex;
     flex-wrap: wrap;
-    
+    width: 100%;
+
     .item__contact-text {
       display: flex;
       width: 50%; 

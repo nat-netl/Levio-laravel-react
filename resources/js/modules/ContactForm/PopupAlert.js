@@ -107,7 +107,7 @@ const PopupAlert = ({active, setActive}) => {
                                     <label>
                                       <input
                                       {...register ('email', {
-                                        required: "Поле email обязательно к заполнению'",
+                                        required: "Поле email обязательно к заполнению",
                                         pattern: {
                                           value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                                           message: 'Поле email введено не верно'

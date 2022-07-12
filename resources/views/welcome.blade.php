@@ -16,11 +16,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
     />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    
     <title>Liveo</title>
     
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link href="{{ mix ('css/template.css') }}" rel="stylesheet">
+    <script src="https://unpkg.com/react-yandex-maps/dist/production/react-yandex-maps.umd.js"></script>
   </head>
   <body>
       

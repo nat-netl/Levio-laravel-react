@@ -4,6 +4,7 @@ import MainUslugi from './components/MainUslugi';
 import MainWork from './components/MainWork';
 import MainDecision from './components/MainDecision';
 import MainContacts from './components/MainContacts';
+import MainAboutUs from './components/MainAboutUs';
 
 
 const Main = () => {
@@ -13,6 +14,7 @@ const Main = () => {
       <MainUslugi />
       <MainWork />
       <MainDecision />
+      <MainAboutUs />
       <MainContacts />
     </>
   )

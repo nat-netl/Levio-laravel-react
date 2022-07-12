@@ -8,7 +8,7 @@ const Header = () => {
   const [header, setHeader] = useState(false);
   const [menuActive, setMenuActive] = useState(false);
 
-  const items = [{value: "Услуги", href: "services"},{value: "Путь проекта", href: "work"},{value: "Решения", href: "decision"},{value: "Контакты", href: "contacts"},]
+  const items = [{value: "Услуги", href: "services"},{value: "Путь проекта", href: "work"},{value: "Решения", href: "decision"},{value: "Контакты", href: "contacts"},{value: "О нас", href: "o-nas"},]
 
   const changeBackground = () => {
     if ( window.scrollY >= 100 ) {
@@ -23,7 +23,7 @@ const Header = () => {
     <header className={header ? s.header + ' ' + s.active : s.header}>
       <div className='container'>
         <div className={s.header__nav}>
-
+          
           <div className={s.header__col}>
             <div className={s['header__brand-list']}>
               <a className={s.header__brand} href='/'>
@@ -36,8 +36,8 @@ const Header = () => {
 
             <div className={s.header__contacts}>
               <ul className={s['nav__header-contacts']}>
-                <li className={s['item__header-nav']}><a href="tel:+79999999999">+7 (999) 999-99-99</a></li>
-                <li className={s['item__header-nav']}><a href="mailto:reply@mail.ru">reply@mail.ru</a></li>
+                <li className={s['item__header-nav']}><a href="tel:+79372995298">+7 (937) 299-52-98</a></li>
+                <li className={s['item__header-nav']}><a href="mailto:nat_netl3@bk.ru">nat_netl3@bk.ru</a></li>
               </ul>
             </div>
 
@@ -50,7 +50,9 @@ const Header = () => {
                 </button>
               </div>
 
-              <div className={s['lang__header-menu']}><a href='/#' className={s['switch__header-lang']}>EN</a></div>
+              {/* <div className={s['lang__header-menu']}>
+                <a href='/#' className={s['switch__header-lang']} onClick={() => handleClick('en')}>EN</a>
+              </div> */}
             </div>
 
           </div>

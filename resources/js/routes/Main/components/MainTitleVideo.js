@@ -9,7 +9,7 @@ const MainTitleVideo = () => {
 
         <div className='container'>
           <div className={s.title__body}>
-            <h1>Liveo.<br />Интернет студия, агенство под любые ваши нужды</h1>
+            <h1>Liveo.<br />Интернет студия, агентство под любые ваши нужды</h1>
           </div>
         </div>
 

@@ -138,6 +138,11 @@ body {
   height: 5px;
 }
 
+@media (max-width: 620px) {
+  .page-line {
+    display: none;
+  }
+}
 /****************
   slick-slider
 ****************/
@@ -170,7 +175,7 @@ body {
   height: 14px;
   border-radius: 100%;
   top: 0;
-  left: 1px;
+  left: 0;
   background: rgb(36, 0, 0);
   background: linear-gradient(90deg, rgb(36, 0, 0) 0%, rgb(210, 6, 223) 0%, rgb(85, 0, 255) 100%);
 }
@@ -179,7 +184,6 @@ body {
   .slick-list {
     margin-bottom: 50px;
   }
-
   .container .slick-dots {
     display: flex !important;
     justify-content: center;
@@ -189,5 +193,9 @@ body {
   }
   .container .slick-dots li:last-child {
     margin: 0;
+  }
+  .container .slick-dots .slick-active button::after {
+    left: 0.5px;
+    top: 0.5px;
   }
 }

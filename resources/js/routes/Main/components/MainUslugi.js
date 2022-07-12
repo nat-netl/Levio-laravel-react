@@ -39,8 +39,9 @@ const MainUslugi = () => {
     },
   ];
 
-  let cards = card.map(function (item) {
-    let main = ( <div className={s["item__services-items"]} key={item.id.toString()} onClick={() => {setModalActive(true)}}>
+  let cards = card.map(function (item, index) {
+    let main = ( 
+    <div className={s["item__services-items"]} key={index} onClick={() => {setModalActive(true)}}>
       <div className={s["item__services-header"]}>
         <p  className={s["photo__services-item"]} style={item.backgroundPhoto}></p>
         <p className={s["title__services-item"]}> {item.title} </p>

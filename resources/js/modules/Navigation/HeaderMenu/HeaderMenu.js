@@ -1,6 +1,5 @@
 import React from 'react';
 import s from "./HeaderMenu.module.scss";
-import { Link, animateScroll as scroll } from "react-scroll";
 
 const HeaderMenu = ({items, active, setActive}) => {
   return (
@@ -12,12 +11,10 @@ const HeaderMenu = ({items, active, setActive}) => {
                 <nav className={s["nav"]}>
                   <ul>
                   {
-                    items.map ((item) => {
+                    items.map ((item, index) => {
                       return (
-                        <li key={item.id} className={s[""]}>
-                          {/* <a href={'/#' + item.href} onClick={() => setActive(false)}>{item.value}</a> */}
-
-                          <Link href={'/#' + item.href} onClick={() => setActive(false)} >{item.value}</Link>
+                        <li key={index} className={s[""]}>
+                          <a href={'/#' + item.href} onClick={() => setActive(false)}>{item.value}</a>
                         </li>
                       )
                     })

@@ -1,9 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
+import AboutUs from './components/AboutUs';
+import MainContacts from './../Main/components/MainContacts';
 
-const About = () => {
+
+const Main = () => {
   return (
-    <div>Sites</div>
+    <>
+      <AboutUs />
+      <MainContacts />
+    </>
   )
 }
 
-export default About
+export default Main
